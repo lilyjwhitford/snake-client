@@ -1,10 +1,17 @@
 let connection; // stores the active TCP connection object
+const messages = {
+  "z": "Say: woohoo!",
+  "x": "Say: womp womp",
+};
 
 const handleUserInput = function (data) {
   if (data === "\u0003") { // terminates program with ctrl + c
     process.exit();
   }
-  if (data === "w" ) {
+  if (messages[data]) {
+    connection.write(messages[data]);
+  }
+  if (data === "w" ) { // if w key is pressed, snake will move up
     connection.write("Move: up");
   } else if (data === "a") {
     connection.write("Move: left");
@@ -13,6 +20,8 @@ const handleUserInput = function (data) {
   } else if (data === "d") {
     connection.write("Move: right");
   }
+  
+  // connection.write("Say: womp womp");
 };
 
 
