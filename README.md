@@ -8,7 +8,7 @@ Snake is a classic video game where the player maneuvers a dot, and grows it by 
 
 ## How to Get Started
 
-1. Start the server side of the game. (see further instuctions below.)
+1. Start the server side of the game. (see further instructions below.)
 2. Install Snake client. (see futher instructions below.)
 3. Enjoy the game and challenge your friends!
 
@@ -34,8 +34,8 @@ To install and run the Snake client, follow these steps:
 
 ## Final Product
 
-![Screenshot 1](https://imgur.com/H0TCJWW)
-![Screenshot 2](https://imgur.com/i13es4T)
+![Screenshot 1](https://imgur.com/advXXqi)
+![Screenshot 2](https://imgur.com/C9VBkqS)
 
 ## Dependencies
 
