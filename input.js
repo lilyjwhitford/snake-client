@@ -1,27 +1,18 @@
+const { MOVE_KEYS, MSG_KEYS } = require("./constants");
+
 let connection; // stores the active TCP connection object
-const messages = {
-  "z": "Say: woohoo!",
-  "x": "Say: womp womp",
-};
+
 
 const handleUserInput = function (data) {
   if (data === "\u0003") { // terminates program with ctrl + c
     process.exit();
   }
-  if (messages[data]) {
-    connection.write(messages[data]);
+  if (MSG_KEYS[data]) { // if data consists of message key, send message
+    connection.write(`Say: ${MSG_KEYS[data]}`); // sends message to server with j or k keys
   }
-  if (data === "w" ) { // if w key is pressed, snake will move up
-    connection.write("Move: up");
-  } else if (data === "a") {
-    connection.write("Move: left");
-  } else if (data === "s") {
-    connection.write("Move: down");
-  } else if (data === "d") {
-    connection.write("Move: right");
+  if (MOVE_KEYS[data]) { // if data consists of move key, send movement
+    connection.write(`Move: ${MOVE_KEYS[data]}`);
   }
-  
-  // connection.write("Say: womp womp");
 };
 
 
