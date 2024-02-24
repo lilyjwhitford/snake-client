@@ -3,7 +3,7 @@ const { MOVE_KEYS, MSG_KEYS } = require("./constants");
 let connection; // stores the active TCP connection object
 
 
-const handleUserInput = function (data) {
+const handleUserInput = function(data) {
   if (data === "\u0003") { // terminates program with ctrl + c
     process.exit();
   }
@@ -17,7 +17,7 @@ const handleUserInput = function (data) {
 
 
 // setup interface to handle user input from stdin
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);

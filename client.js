@@ -1,7 +1,7 @@
 const { IP, PORT, PLAYER_NAME } = require("./constants"); // import IP address and PORT number
 const net = require("net");
 
-const connect = function () { // establishes connection with the server
+const connect = function() { // establishes connection with the server
   const conn = net.createConnection({
     host: IP, // IP address here
     port: PORT, // PORT number here

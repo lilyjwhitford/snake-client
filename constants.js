@@ -10,8 +10,8 @@ const MOVE_KEYS = {
 };
 
 const MSG_KEYS = {
-    "j": "woohoo!",
-    "k": "womp womp"
+  "j": "woohoo!",
+  "k": "womp womp"
 };
 
 module.exports = {
