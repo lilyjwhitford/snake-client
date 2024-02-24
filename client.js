@@ -25,6 +25,4 @@ const connect = function () { // establishes connection with the server
   return conn;
 };
 
-module.exports = {
-connect,
-};
+module.exports = { connect };
