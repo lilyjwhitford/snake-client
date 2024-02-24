@@ -34,8 +34,8 @@ To install and run the Snake client, follow these steps:
 
 ## Final Product
 
-![Screenshot 1](https://imgur.com/advXXqi)
-![Screenshot 2](https://imgur.com/C9VBkqS)
+![Screenshot 1](https://i.imgur.com/bP0BzDC.png)
+![Screenshot 2](https://i.imgur.com/6inqKhK.png)
 
 ## Dependencies
 
